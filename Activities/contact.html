@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact Form</title>
+  </head>
+  <body>
+    <header id="header">
+      <h1>Let's work together</h1>
+      <p>
+        or reach us via:
+        <a href="https://github.com/rosesauce" target="_blank">Github</a>
+      </p>
+    </header>
+
+    <section id="forms">
+      <!-- Usage of form elements: input, textarea, select, button -->
+
+      <form action="submit_page.php" method="post">
+        <table>
+            <tr>
+                <td>
+                    Name:
+                </td>
+                <td>
+                    <input type="text" placeholder="Name" name="" required>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Gender:
+                </td>
+                <td>
+                    <input type="radio" name="Gender">Male
+                    <input type="radio" name="Gender">Female
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Email:
+                </td>
+                <td>
+                    <input type="email" placeholder="Email" name="" required>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Phone No:
+                </td>
+                <td>
+                    <select>
+                        <option>+63</option>
+                        <option>+93</option>
+                        <option>+44</option>
+                        <option>+850</option>
+                        <option>+970</option>
+                    </select>
+                    <input type="Phone" placeholder="947507***" name="" required>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Message:
+                </td>
+                <td>
+                    <textarea
+                    id="message" name="message" rows="2" cols="30" required
+                  ></textarea>
+                  <br>
+                    <input type="checkbox" name="check" id="check1" value="check1" />
+                    <label for="check1">I accept whatever condition it is!</label>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <button type="submit">Submit</button>
+                </td>
+            </tr>
+        </table>
+      </form>
+    </section>
+  </body>
+</html>
