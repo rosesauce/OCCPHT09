@@ -1,0 +1,31 @@
+body {
+    background-color: aqua;
+}
+
+.color-example {
+    color:rgba(36, 169, 69, 0.504);
+
+}
+
+.background-example {
+    background-color: rgb(0, 255, 255);
+
+}
+
+.background-image {
+    background-image: url("tiger.jpeg");
+    height:200px;
+    width: 200px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.image-sizing-example {
+    height: 400px;
+    width: 400px;
+    display: block;
+    margin: 0 auto;
+}
+
+

@@ -1,0 +1,52 @@
+
+/* Naming conventions */
+/* Camel Casing: fontFamilySize
+Khebab Casing: font-family-size */
+
+@import url('https://fonts.googleapis.com/css2?family=Playwrite+CU:wght@100..400&display=swap');
+
+.font-family-size {
+    font-family: "Playwrite CU", cursive,Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 20px;
+}
+
+.bold {
+    font-weight: bold;
+}
+.italic {
+    font-style: italic;
+}
+.underline {
+    text-decoration: underline;
+}
+
+.center-align {
+    text-align: center;
+}
+
+.line-through {
+    text-decoration: line-through;
+}
+
+.line-height {
+    line-height: 4;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    width: 200px;
+    border: 1px solid;
+}
+.letter-spacing{
+    letter-spacing: 8px;
+    word-spacing: 7px;
+    text-indent: 18px;
+}
+.text-shadow {
+    /* 
+    1st value: Horizontal
+    2nd value: Vertical
+    3rd value: blur effect
+     */
+    text-shadow: 10px 8px 2px green;
+    text-transform:uppercase;
+}

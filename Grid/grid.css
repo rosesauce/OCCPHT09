@@ -1,0 +1,112 @@
+/* Using px */
+.gridContainer {
+    display: grid;
+    grid-template-columns: 400px 300px 300px;
+    grid-template-rows:  200px 100px 100px ;
+}
+
+
+/* Using Auto */
+.gridContainer {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    grid-template-rows: auto;
+}
+
+
+/* Percentage */
+.gridContainer {
+    display: grid;
+    grid-template-columns: 50% 25% 25%; /* 100% */
+}
+
+
+/* Using fr */
+.gridContainer {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+}
+
+
+/* Using repeat() */
+.gridContainer {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+}
+
+
+
+/* Using gap */
+.gridContainer {
+    display: grid;
+    gap: 10px;
+    gap: 0px;
+    grid-column-gap: 20px;
+    grid-row-gap: 10px;
+    gap: 0px;
+}
+
+/*
+.gridItem7 {
+    grid-area: 2 / 2 / 4 / 6;
+}
+*/
+
+/* Media queries */
+/* 
+    Mobile Devices: Less than 481px
+    iPads, Tablets: 481px - 768px
+    Small Screens, Laptops: 769px - 1024px
+    Desktops, Large Screens: 1025px - 1200px
+    Extra Large Screens, TV: 1201px and greater
+*/
+
+/* Media Query for Large Screens */
+@media screen and (min-width: 769px) {
+    .gridContainer {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: auto;
+    }
+    .gridItem7 {
+        grid-area: 1 / 1 / 2 / 5;
+    }
+}
+
+
+
+/* Media Query for Tablets Screens */
+@media screen and (min-width: 481px) and (max-width: 768px) {
+    .gridContainer {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: auto;
+    }
+    .gridItem25 {
+        display: none;
+    }
+}
+
+
+/* Media Query for Mobile Screens */
+@media screen and (max-width: 480px) {
+    .gridContainer {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: auto;
+    }
+    .gridItem24 {
+        display: none;
+    }
+    .gridItem23 {
+        display: none;
+    }
+    .gridItem24 {
+        display: none;
+    }
+    .gridItem25 {
+        display: none;
+    }
+    
+
+} 

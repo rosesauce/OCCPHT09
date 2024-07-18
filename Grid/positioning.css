@@ -1,0 +1,33 @@
+/* Relative to the element's original position */
+.relative {
+    background-color: chocolate;
+    position: relative;
+    top: 0px;
+    left: 0px;
+    padding: 10px;
+}
+
+
+/* Relative to its nearest container */
+.absolute {
+    background-color: cadetblue;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+}
+
+
+/* Fixed on our viewport */
+.fixed {
+    background-color: burlywood;
+    position: fixed;
+    bottom: 0px;
+    right: 0px;
+}
+
+
+.sticky {
+    background-color: blueviolet;
+    position: sticky;
+    top: 0px;
+}
